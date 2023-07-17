@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        #newTask {
+            width: 200px;
+            height: 30px;
+        }
+
+        #btnAdd {
+            background-color: rgb(242, 187, 116);
+            height: 35px;
+        }
+
+        #allTasks {
+            color: grey;
+        }
+
+        #btnClear {
+            background-color: gray;
+            color: rgb(47, 50, 50);
+            height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Добавить задачу</h2>
+
+    <input type="text" placeholder="Задача" id="newTask">
+    <button id="btnAdd" onclick="onAddNewTask()">Добавить</button>
+    <h2>Список задач</h2>
+    <div id="allTasks">Нет задач</div><br />
+    <button id="btnClear" onclick="clearList()">Очистить список задач</button>
+    <script src="./hw.js"></script>
+</body>
+
+</html>
