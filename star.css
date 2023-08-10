@@ -1,0 +1,56 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    gap: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.container__hero {
+    border: 1px solid black;
+    width: 800px;
+}
+
+.hero-name {
+    font-size: 30px;
+}
+
+/*звёзды*/
+.full-stars {
+    text-align: center;
+}
+
+.full-stars .rating-group {
+    display: inline-flex;
+}
+
+.full-stars input {
+    position: absolute;
+    left: -9999px;
+}
+
+.full-stars label {
+    margin: 0;
+    cursor: pointer;
+}
+
+.full-stars label svg {
+    margin: 2px;
+    height: 40px;
+    width: 40px;
+    fill: #deee09;
+    transition: fill 0.3s;
+}
+
+.full-stars input:checked~label svg {
+    fill: #ebebaa;
+}
+
+.full-stars .rating-group:hover label svg {
+    fill: #f9ed0c;
+}
+
+.full-stars .rating-group input:hover~label svg {
+    fill: #ecf0af;
+}
